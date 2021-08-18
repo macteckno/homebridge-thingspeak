@@ -118,10 +118,10 @@ Httpthingspeak.prototype = {
                                 services.push(this.temperatureService);
                                 break;
                         case "CurrentRelativeHumidity":
-                                this.temperatureService = new Service.HumiditySensor(this.$
+                                this.temperatureService = new Service.HumiditySensor(th$
                                 this.temperatureService
                                         .getCharacteristic(Characteristic.CurrentRelativeH$
-                                        .on('get', this.getSensorHumidityValue.bind(this));
+                                        .on('get', this.getSensorHumidityValue.bind(thi$
                                 services.push(this.temperatureService);
                                 break;
                         default:
